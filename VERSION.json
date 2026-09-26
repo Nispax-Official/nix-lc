@@ -1,0 +1,22 @@
+{
+  "version": "26.1.0",
+  "channel": "beta",
+  "display_version": "26.1.0 beta",
+  "release_tag": "v26.1.0-beta",
+  "repo": "Nispax-Official/nix-lc",
+  "mandatory": false,
+  "notes": "Initial NiX Localhost Client 26.1.0 beta.",
+  "asset": {
+    "name": null,
+    "url": null,
+    "size": null
+  },
+  "sha256": null,
+  "update_source": {
+    "type": "github-releases",
+    "releases_api": "https://api.github.com/repos/Nispax-Official/nix-lc/releases",
+    "releases_page": "https://github.com/Nispax-Official/nix-lc/releases",
+    "convention": "Each published GitHub Release should attach two assets: (1) a 'VERSION.json' file using this same schema describing that release (version/channel/mandatory/notes/asset/sha256), and (2) the actual update package, a zip of the full NiX project named exactly what that release's VERSION.json 'asset.name' says. Recommended deterministic name: NiX-Localhost-Client-<version>-<channel>.zip",
+    "note": "This root file is read as the CURRENTLY INSTALLED version. asset/sha256 above are null because no release has been published yet - they only describe an installed build's own metadata, not a pending update. Do not populate them until an actual asset exists; the updater fetches per-release values from each release's own VERSION.json asset at check time."
+  }
+}
